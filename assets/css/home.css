@@ -1,0 +1,140 @@
+#home {
+  background-image: url("/img/bg.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wavetopo {
+  position: absolute;
+  content: '';
+  top: -2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.wavebottom {
+  overflow: hidden;
+  position: absolute;
+  content: '';
+  bottom: -6%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 35%;
+  z-index: 1;
+}
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+/* Efeito do botão aparecendo de baixo */
+.product .buy-btn {
+  background: var(--main-color);
+  transform: translateY(20px);
+  opacity: 0;
+  border-radius: 0.3rem;
+  transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.product .buy-btn:hover {
+  background-color: var(--main-color-btn-hover);
+}
+
+/* Espaçamento entre as estrelas */
+.stars {
+  padding: 10px 0;
+}
+
+.stars i {
+  font-size: 00.8rem;
+  color: var(--stars-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by LightAndy1 */ 
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(234, 226, 183, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 226 183 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
